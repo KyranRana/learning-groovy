@@ -1,0 +1,22 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'com.rana'
+version '1.0-SNAPSHOT'
+
+compileJava {
+    sourceCompatibility = 1.8
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:3.0.1'
+    compile 'org.apache.commons:commons-lang3:3.9'
+
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+}
